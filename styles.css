@@ -1,7 +1,40 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
 
+:root{
+    --primary-color: #3B82F6;
+}
+
 body{
     font-family: "Montserrat", sans-serif;
-    text-align: center;  
-    margin: 0;      
+    text-align: center;          
 }
+
+header{
+    background-color: var(--primary-color);
+    padding: 1rem;
+    color: white;    
+    font-weight: bold; 
+    border-radius: 1rem;   
+}
+
+.optionArea{
+    padding: 1.5rem;
+}
+
+.optionArea button{
+    padding: 2rem 1rem;
+    display: list-item;
+    margin: 1rem auto;
+    width: 300px;
+    font-family: "Montserrat";
+    font-weight: bold;
+    font-size: medium;
+    border: 1px solid;
+    border-radius: 0.5rem;
+    cursor: pointer;         
+}
+
+.optionArea a{
+    color: black;
+}
+
