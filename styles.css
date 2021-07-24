@@ -9,7 +9,7 @@ body{
     text-align: center;          
 }
 
-header{
+.options-header{
     background-color: var(--primary-color);
     padding: 1rem;
     color: white;    
@@ -36,5 +36,41 @@ header{
 
 .optionArea a{
     color: black;
+    text-decoration: none;
 }
 
+.info{
+    width: 60%;
+    margin: auto;
+    text-align: center;    
+}
+
+.formula{
+    margin: auto;       
+    padding: 1rem;    
+    font-weight: bold;
+}
+
+.label{
+    font-weight: bold;
+}
+
+.input-area{
+    padding-bottom: 1rem;
+}
+.input-area input{
+    padding: 0.5rem;
+    border: 2px solid;
+    width: 150px;
+    border-radius: 0.5rem;
+    text-align: center;
+    font-family: "Montserrat", sans-serif;    
+}
+
+.output{
+    padding: 1rem;
+    border: 2px solid;
+    margin:auto;
+    width: 100px;
+    border-radius: 0.5rem;
+}

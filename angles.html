@@ -5,8 +5,32 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Angles of Triangle</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
+    <header class="options-header">
+        <h1>Angles of Triangles</h1>
+    </header>
     
+    <section class="info">
+        <p>A triangle has three angles in total let say x, y and z. The sum of all the angles is equal to 180°.</p>       
+        <img src="/img/angles.png" alt="">
+        <p class="formula">X°+ Y°+ Z° = 180°</p>
+        <p>Based on angles, triangles are are catagorized into three types: Acute, Obtuse and Right-angled triangle.</p>
+        <p class="label">See it yourself</p>
+    </section>
+    <section class="input-area">
+        <input id="angle-one" type="number" placeholder="Enter first angle">
+        <input id="angle-two" type="number" placeholder="Enter second angle">
+    </section>
+    <section class="output-area">
+        <p class="label">Third angle would appear here</p>
+        <div id="angle-three" class="output"></div>
+        <p class="label">Type of Triangle</p>
+        <div id="angle-type" class="output"></div>
+    </section>
+    <footer style="height: 15vh;"></footer>     
+
+    <script src="area.js" type="text/javascript"></script>    
 </body>
 </html>
