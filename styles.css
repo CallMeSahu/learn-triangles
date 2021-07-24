@@ -39,18 +39,6 @@ body{
     text-decoration: none;
 }
 
-.info{
-    width: 60%;
-    margin: auto;
-    text-align: center;    
-}
-
-.formula{
-    margin: auto;       
-    padding: 0.5rem;    
-    font-weight: bold;
-}
-
 .label{
     font-weight: bold;
 }

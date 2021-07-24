@@ -1,19 +1,25 @@
 var firstAngleInput = document.querySelector("#angle-one");
 var secondAngleInput = document.querySelector("#angle-two");
+var thirdAngleInput = document.querySelector("#angle-three");
 var findBtn = document.querySelector("#find-button");
-var thirdAngleOutput = document.querySelector("#angle-three");
-var triangleTypeOutput = document.querySelector("#angle-type");
+var result = document.querySelector("#triangle-output");
+var triangleTypeOutput = document.querySelector("#triangle-type");
 var x,y,z = 0;
 
-function getThirdAngle(){
+function getTriangle(){
+    if((firstAngleInput.value == "")||(secondAngleInput.value == "")||(thirdAngleInput.value == "")){
+        alert("Enter all angles!");
+        return
+    }    
     x = parseInt(firstAngleInput.value, 10);
     y = parseInt(secondAngleInput.value, 10);
-    z = 180 - (x+y)
-    if(z <= 0){
-        return "Not a triangle";
+    z = parseInt(thirdAngleInput.value, 10);    
+    var angle = x+y+z;
+    if(angle === 180){
+        return "Yes, it is a Triangle!"
     }
     else{
-        return z+"°";
+        return "No, it is not a Triangle."
     }
 }
 
@@ -28,7 +34,8 @@ function getTriangleType(){
         return "Obtuse";
 }
 
-findBtn.addEventListener("click", () =>{    
-    thirdAngleOutput.innerText = getThirdAngle();
+findBtn.addEventListener("click", () =>{   
+    console.log("click"); 
+    result.innerText = getTriangle();
     triangleTypeOutput.innerText = getTriangleType();
 });
