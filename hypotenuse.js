@@ -6,7 +6,7 @@ var findBtn = document.querySelector("#find-button");
 function getThirdSide(){
     var a = parseInt(sideOne.value, 10);
     var b = parseInt(sideTwo.value, 10);
-    var result = Math.sqrt(a*a + b*b);
+    var result = Math.sqrt(a*a + b*b)+ " units";
     return result;
 }
 
