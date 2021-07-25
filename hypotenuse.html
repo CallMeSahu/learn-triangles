@@ -5,8 +5,23 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Hypotenuse of Triangle</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    
+    <header class="options-header">
+        <h1>Hypotenuse of Triangles</h1>
+    </header>
+    <section class="input-area">
+        <p class="label">Enter Length of Sides of a Right Angled Triangle</p>
+        <input id="side-one" type="number" placeholder="Enter first side">
+        <input id="side-two" type="number" placeholder="Enter second side">       
+        <button id="find-button">Find!</button>
+    </section>
+    <section class="output-area">
+        <p class="label">Third side would appear here:</p>
+        <div id="side-three" class="output"></div>        
+    </section>
+
+    <script src="hypotenuse.js" type="text/javascript"></script>
 </body>
 </html>
