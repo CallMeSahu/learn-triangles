@@ -5,8 +5,33 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Triangle Quiz</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    
+    <header class="options-header">
+        <h1>Triangle Quiz</h1>
+    </header> 
+    <p class="label">Choose the correct answer from the following</p>
+    <div class="card">
+        <p class="question">Question will be placed here</p>
+        <ul>
+            <li>              
+                <input type="radio" name="answer" id="ans1" class="answer">
+                <label for="ans1" id="option1">Option 1</label>
+            </li>
+            <li>                
+                <input type="radio" name="answer" id="ans2" class="answer">
+                <label for="ans2" id="option2">Option 2</label>
+            </li>
+            <li>                
+                <input type="radio" name="answer" id="ans3" class="answer">
+                <label for="ans3" id="option3">Option 3</label>
+            </li>
+        </ul>
+        <button id="submit-button">Submit</button>
+        <div id="show-score" class="score-section"></div>
+    </div>   
+
+    <script src="quiz.js" type="text/javascript"></script>
 </body>
 </html>

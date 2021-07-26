@@ -69,3 +69,45 @@ body{
     width: 200px;
     border-radius: 0.5rem;
 }
+
+.card{
+    padding: 1rem 0.5rem;
+    background-color: lightgrey;
+    border-radius: 0.5rem;
+    width: 500px;
+    margin: auto;
+    text-align: left;
+}
+
+#submit-button{
+    display: block;
+    margin: 1rem auto;
+    padding: 0.5rem 1rem;
+    border: 2px solid;
+    border-radius: 0.5rem;
+    font-family: "Montserrat", sans-serif;
+    font-weight: bold;
+}
+
+.question{
+    padding: 0rem 1rem;
+    
+}
+
+ul{
+    list-style-type: none;
+}
+
+li{
+    padding: 0.3rem;
+}
+
+.score-section{
+    border: 1px solid;
+    width: 300px;
+    margin: auto;
+    padding: 2rem;
+    background-color: white;
+    display: none;
+}
+
