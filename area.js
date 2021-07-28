@@ -3,6 +3,7 @@ var sideTwo = document.querySelector("#side-two");
 var sideThree = document.querySelector("#side-three");
 var areaOutput = document.querySelector("#area-output");
 var findBtn = document.querySelector("#find-button");
+var showReadUp = document.querySelector(".info");
 
 function getArea(){
     var a = parseInt(sideOne.value, 10);
@@ -20,4 +21,6 @@ findBtn.addEventListener("click", () => {
     else{
         areaOutput.innerText = getArea();
     }
+
+    showReadUp.style.display = "block";
 });

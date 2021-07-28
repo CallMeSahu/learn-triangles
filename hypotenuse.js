@@ -2,6 +2,7 @@ var sideOne = document.querySelector("#side-one");
 var sideTwo = document.querySelector("#side-two");
 var sideThree = document.querySelector("#side-three");
 var findBtn = document.querySelector("#find-button");
+var showReadUp = document.querySelector(".info");
 
 function getThirdSide(){
     var a = parseInt(sideOne.value, 10);
@@ -18,4 +19,6 @@ findBtn.addEventListener("click", () => {
     else{
         sideThree.innerText = getThirdSide();
     }
+
+    showReadUp.style.display = "block";
 });

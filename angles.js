@@ -4,6 +4,7 @@ var thirdAngleInput = document.querySelector("#angle-three");
 var findBtn = document.querySelector("#find-button");
 var result = document.querySelector("#triangle-output");
 var triangleTypeOutput = document.querySelector("#triangle-type");
+var showReadUp = document.querySelector(".info");
 var x,y,z = 0;
 
 function getTriangleType(){
@@ -36,5 +37,6 @@ findBtn.addEventListener("click", () =>{
         alert("Enter all angles!");
         return
     }        
-    result.innerText = getTriangle();    
+    result.innerText = getTriangle(); 
+    showReadUp.style.display = "block";
 });
