@@ -79,7 +79,7 @@ body{
     text-align: left;
 }
 
-#submit-button{
+.quiz-button{
     display: block;
     margin: 1rem auto;
     padding: 0.5rem 1rem;
@@ -87,6 +87,7 @@ body{
     border-radius: 0.5rem;
     font-family: "Montserrat", sans-serif;
     font-weight: bold;
+    cursor: pointer;
 }
 
 .question{
@@ -104,10 +105,19 @@ li{
 
 .score-section{
     border: 1px solid;
+    text-align: center;
     width: 300px;
     margin: auto;
-    padding: 2rem;
-    background-color: white;
+    padding: 0.2rem;
+    background-color: white;    
+}
+
+#show-score{
     display: none;
 }
+
+#reset-button{
+    display: none;
+}
+
 
