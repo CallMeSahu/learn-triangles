@@ -10,7 +10,14 @@ function getArea(){
     var b = parseInt(sideTwo.value, 10);
     var c = parseInt(sideThree.value, 10);
     var s = (a+b+c)/2;
-    return Math.sqrt(s*(s-a)*(s-b)*(s-c)).toFixed(2) + " unit sq.";
+    var area =  Math.sqrt(s*(s-a)*(s-b)*(s-c)).toFixed(2);
+
+    if((area === "NaN")||(area == 0)){
+        return "Side does not form a triangle!"
+    }
+    else{
+        return ( area + " unit sq.");
+    }
 }
 
 findBtn.addEventListener("click", () => {
